@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+      "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+          "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.lawencon.laundry.model.Customers" table="tb_m_customers">
+
+		<id name="idCustomer">
+			<column name="id_customers" />	
+			<generator class="identity" />
+		</id>
+		
+		<property name="nameCustomer">
+			<column name="name_customers" length="100"/>
+		</property>
+		
+		<property name="addressCustomer">
+			<column name="customer_code" length="100" />
+		</property>
+		
+		<property name="customerCode">
+			<column name="address_customers" length="100" unique="true"/>
+		</property>
+		
+	</class>
+
+</hibernate-mapping>

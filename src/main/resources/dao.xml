@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+	<bean id="aboutDao" class="com.lawencon.laundry.dao.AboutDaoImpl">
+		<property name="dataSource" ref="dataSource"></property>
+	</bean>
+	<bean id="customerDao" class="com.lawencon.laundry.dao.CustomerDaoImpl">
+		<property name="dataSource" ref="dataSource"></property>
+	</bean>
+	<bean id="detailTransactionDao" class="com.lawencon.laundry.dao.DetailTransactionDaoImpl">
+		<property name="dataSource" ref="dataSource"></property>
+	</bean>
+	<bean id="parfumeDao" class="com.lawencon.laundry.dao.ParfumeDaoImpl">
+		<property name="dataSource" ref="dataSource"></property>
+	</bean>
+	<bean id="paymentDao" class="com.lawencon.laundry.dao.PaymentDaoImpl">
+		<property name="dataSource" ref="dataSource"></property>
+	</bean>
+	<bean id="profilesDao" class="com.lawencon.laundry.dao.ProfilesDaoImpl">
+		<property name="dataSource" ref="dataSource"></property>
+	</bean>
+	<bean id="rolesDao" class="com.lawencon.laundry.dao.RolesDaoImpl">
+		<property name="dataSource" ref="dataSource"></property>
+	</bean>
+	<bean id="serviceDao" class="com.lawencon.laundry.dao.ServiceDaoImpl">
+		<property name="dataSource" ref="dataSource"></property>
+	</bean>
+	<bean id="transactionDao" class="com.lawencon.laundry.dao.TransactionDaoImpl">
+		<property name="dataSource" ref="dataSource"></property>
+	</bean>
+	<bean id="usersDao" class="com.lawencon.laundry.dao.UsersDaoImpl">
+		<property name="dataSource" ref="dataSource"></property>
+	</bean>
+</beans>

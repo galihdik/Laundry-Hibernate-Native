@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+	<bean id="aboutView" class="com.lawencon.laundry.view.AboutView" autowire="constructor">
+        
+	</bean>
+	<bean id="customerView" class="com.lawencon.laundry.view.CustomerView" autowire="constructor">
+        
+	</bean>
+	<bean id="history" class="com.lawencon.laundry.view.History" autowire="constructor">
+        
+	</bean>
+	<bean id="login" class="com.lawencon.laundry.view.Login" autowire="constructor"> 
+        
+	</bean>
+	<bean id="mainView" class="com.lawencon.laundry.view.MainView" autowire="constructor">
+        
+	</bean>
+	<bean id="menuAdmin" class="com.lawencon.laundry.view.MenuAdmin" autowire="constructor">
+        
+	</bean>
+	<bean id="menuCashier" class="com.lawencon.laundry.view.MenuCashier" autowire="constructor">
+     
+	</bean>
+	<bean id="parfumeView" class="com.lawencon.laundry.view.ParfumeView" autowire="constructor">
+       
+	</bean>
+	<bean id="paymentView" class="com.lawencon.laundry.view.PaymentView" autowire="constructor">
+        
+	</bean>
+	<bean id="profileView" class="com.lawencon.laundry.view.ProfileView" autowire="constructor">
+       
+	</bean>
+	<bean id="roleView" class="com.lawencon.laundry.view.RoleView" autowire="constructor">
+        
+	</bean>
+	<bean id="serviceView" class="com.lawencon.laundry.view.ServiceView" autowire="constructor">
+       
+	</bean>
+	<bean id="userView" class="com.lawencon.laundry.view.UserView" autowire="constructor">
+     
+	</bean>
+</beans>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+	<bean id="aboutService" class="com.lawencon.laundry.service.AboutServiceImpl" autowire="constructor">
+		
+	</bean>
+	<bean id="customerService" class="com.lawencon.laundry.service.CustomerServiceImpl" autowire="constructor" >
+		
+	</bean>
+	<bean id="detailTransactionService" class="com.lawencon.laundry.service.DetailTransactionServiceImpl" autowire="constructor">
+	
+	</bean>
+	<bean id="parfumeService" class="com.lawencon.laundry.service.ParfumeServiceImpl" autowire="constructor">
+	
+	</bean>
+	<bean id="paymentsService" class="com.lawencon.laundry.service.PaymentServiceImpl" autowire="constructor">
+		
+	</bean>
+	<bean id="profileService" class="com.lawencon.laundry.service.ProfileServiceImpl" autowire="constructor">
+		
+	</bean>
+	<bean id="rolesService" class="com.lawencon.laundry.service.RolesServiceImpl" autowire="constructor">
+		
+	</bean>
+	<bean id="servService" class="com.lawencon.laundry.service.ServServiceImpl" autowire="constructor">
+		
+	</bean>
+	<bean id="transactionsService" class="com.lawencon.laundry.service.TransactionServiceImpl" autowire="constructor">
+		
+	</bean>
+	<bean id="usersService" class="com.lawencon.laundry.service.UsersServicesImpl" autowire="constructor">
+		
+	</bean>
+	
+</beans>

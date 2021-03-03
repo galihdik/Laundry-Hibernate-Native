@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+      "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+          "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.lawencon.laundry.model.Transactions" table="tb_r_hdr_transaction">
+
+		<id name="idTransactions">
+			<column name="id_transaction" />	
+			<generator class="identity" />
+		</id>
+		
+		<property name="transactionDate">
+			<column name="transaction_date" length="100"/>
+		</property>
+		
+		<property name="priceTotal">
+			<column name="price_total" length="100"/>
+		</property>
+		
+		<many-to-one name="idAbout" class="com.lawencon.laundry.model.About" lazy="false">
+			<column name="id_about" />
+		</many-to-one>
+		
+		<many-to-one name="idPayments" class="com.lawencon.laundry.model.Payments" lazy="false">
+			<column name="id_payments" unique ="true"/>
+		</many-to-one>
+		
+		<many-to-one name="idUsers" class="com.lawencon.laundry.model.Users" lazy="false">
+			<column name="id_users" unique ="true"/>
+		</many-to-one>
+		
+		<property name="struk">
+			<column name="struk" length="100" unique="true"/>
+		</property>
+		
+		<many-to-one name="idCustomer" class="com.lawencon.laundry.model.Customers" lazy="false">
+			<column name="id_customers" unique ="true"/>
+		</many-to-one>
+		
+	</class>
+
+</hibernate-mapping>

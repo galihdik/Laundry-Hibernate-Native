@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+      "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+          "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.lawencon.laundry.model.Parfumes" table="tb_m_parfumes">
+
+		<id name="idParfume">
+			<column name="id_parfume" />	
+			<generator class="identity" />
+		</id>
+		
+		<property name="nameParfume">
+			<column name="parfume_name" length="100"/>
+		</property>
+		
+		<property name="parfumeCode">
+			<column name="parfume_code" length="100" unique="true"/>
+		</property>
+		
+	</class>
+
+</hibernate-mapping>

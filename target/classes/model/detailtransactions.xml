@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+      "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+          "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.lawencon.laundry.model.DetailTransactions" table="tb_r_dtl_transaction">
+
+		<id name="idDetailTransactions">
+			<column name="id_detail_transaction" />	
+			<generator class="identity" />
+		</id>
+		
+		<property name="qty">
+			<column name="qty" length="100"/>
+		</property>
+		
+		<many-to-one name="idTransactions" class="com.lawencon.laundry.model.Transactions" lazy="false">
+			<column name="id_transaction" />
+		</many-to-one>
+		
+		<property name="nameItem">
+			<column name="name_item" length="100"/>
+		</property>
+		
+		<many-to-one name="idServices" class="com.lawencon.laundry.model.Services" lazy="false">
+			<column name="id_services" />
+		</many-to-one>
+		
+		<many-to-one name="idParfume" class="com.lawencon.laundry.model.Parfumes" lazy="false">
+			<column name="id_parfume" />
+		</many-to-one>
+		
+		<property name="weight">
+			<column name="weight" length="100"/>
+		</property>
+		
+		<property name="priceDetail">
+			<column name="price_dtl" length="100"/>
+		</property>
+		
+		<property name="returnTime">
+			<column name="return_time" length="100"/>
+		</property>
+		
+		<property name="codeDetail">
+			<column name="code_dtl" length="100" unique="true"/>
+		</property>
+		
+	</class>
+
+</hibernate-mapping>

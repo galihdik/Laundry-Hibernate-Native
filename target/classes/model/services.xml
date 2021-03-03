@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+      "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+          "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.lawencon.laundry.model.Services" table="tb_m_services">
+
+		<id name="idServices">
+			<column name="id_services" />	
+			<generator class="identity" />
+		</id>
+		
+		<property name="nameServies">
+			<column name="name_service" length="100"/>
+		</property>
+		
+		<property name="durationServices">
+			<column name="duration_service" length="100" />
+		</property>
+		
+		<property name="priceServices">
+			<column name="price_service" length="100" />
+		</property>
+		
+		<property name="serviceCode">
+			<column name="service_code" length="100" unique="true"/>
+		</property>
+		
+	</class>
+
+</hibernate-mapping>

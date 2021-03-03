@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+	<bean id="aboutDaoHibernateNative" class="com.lawencon.laundry.dao.AboutDaoHibernateNativeImpl" autowire="byName">
+		
+	</bean>
+	<bean id="customerDaoHibernateNative" class="com.lawencon.laundry.dao.CustomerDaoHibernateNativeImpl" autowire="byName">
+		
+	</bean>
+	<bean id="detailTransactionDaoHibernateNative" class="com.lawencon.laundry.dao.DetailTransactionDaoHibernateNativeImpl" autowire="byName">
+		
+	</bean>
+	<bean id="parfumeDaoHibernateNative" class="com.lawencon.laundry.dao.ParfumeDaoHibernateNativeImpl" autowire="byName">
+		
+	</bean>
+	<bean id="paymentDaoHibernateNative" class="com.lawencon.laundry.dao.PaymentDaoHibernateNativeImpl" autowire="byName">
+		
+	</bean>
+	<bean id="profilesDaoHibernateNative" class="com.lawencon.laundry.dao.ProfilesDaoHibernateNativeImpl" autowire="byName">
+		
+	</bean>
+	<bean id="rolesDaoHibernateNative" class="com.lawencon.laundry.dao.RolesDaoHibernateNativeImpl" autowire="byName">
+		
+	</bean>
+	<bean id="serviceDaoHibernateNative" class="com.lawencon.laundry.dao.ServiceDaoHibernateNativeImpl" autowire="byName">
+		
+	</bean>
+	<bean id="transactionsDaoHibernateNative" class="com.lawencon.laundry.dao.TransactionDaoHibernateNativeImpl" autowire="byName">
+	
+	</bean>
+	<bean id="usersDaoHibernateNative" class="com.lawencon.laundry.dao.UsersDaoHibernateNativeImpl" autowire="byName">
+		
+	</bean>
+</beans>
